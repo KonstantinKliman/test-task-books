@@ -9,5 +9,5 @@ Route::post('/books', [BookController::class, 'create']);
 Route::post('/authors', [AuthorController::class, 'create']);
 Route::get('/books/{book:slug}', [BookController::class, 'show']);
 Route::get('/authors/{author:slug}', [AuthorController::class, 'show']);
-Route::get('/books/{bookId}', [BookController::class, 'getById']);
-Route::get('/authors/{authorId}', [AuthorController::class, 'getById']);
+Route::get('/books/id/{bookId}', [BookController::class, 'getById']);
+Route::get('/authors/id/{authorId}', [AuthorController::class, 'getById']);

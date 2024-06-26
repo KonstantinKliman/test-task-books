@@ -50,7 +50,7 @@ class AuthorService implements IAuthorService
 
         $this->repository->syncAuthorToBooks($author,$books);
 
-        $this->repository->load($author, $table);
+        $this->repository->load($author, 'books');
 
         return new AuthorResource($author);
     }
